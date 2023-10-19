@@ -6,16 +6,16 @@ const Header = () => {
           Tarak Shaw
         </h1>
         <nav className="flex gap-6">
-          <p className="text-lg cursor-pointer hover:text-white active:text-white">
+          <p className="text-xl cursor-pointer hover:text-white active:text-white">
             <span className="text-orange-400">#</span>home
           </p>
-          <p className="text-lg cursor-pointer hover:text-white active:text-white">
+          <p className="text-xl cursor-pointer hover:text-white active:text-white">
             <span className="text-orange-400">#</span>projects
           </p>
-          <p className="text-lg cursor-pointer hover:text-white active:text-white">
+          <p className="text-xl cursor-pointer hover:text-white active:text-white">
             <span className="text-orange-400">#</span>about
           </p>
-          <p className="text-lg cursor-pointer hover:text-white active:text-white">
+          <p className="text-xl cursor-pointer hover:text-white active:text-white">
             <span className="text-orange-400">#</span>contact
           </p>
         </nav>
