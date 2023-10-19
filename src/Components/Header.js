@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <header className="max-w-screen-xl h-14 mx-auto bg-black/95 text-gray-100 flex items-end justify-between font-mono px-3">
+      <header className="max-w-screen-xl h-14 mx-auto text-gray-100 flex items-end justify-between font-mono">
         <h1 className="text-2xl font-semibold cursor-pointer text-white">
           Tarak Shaw
         </h1>
