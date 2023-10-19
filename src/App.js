@@ -7,7 +7,6 @@ const App = () => {
     <div className="bg-black/95">
       <Header />
       <Home />
-      <Projects />
     </div>
   );
 };
