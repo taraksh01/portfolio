@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio webapp where i will be showcasing my projects and achievements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taraksh01/portfolio.git"
+  },
+  "keywords": [
+    "taraksh01",
+    "Tarak Shaw",
+    "portfolio",
+    "resume"
+  ],
+  "author": "Tarak Shaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taraksh01/portfolio/issues"
+  },
+  "homepage": "https://github.com/taraksh01/portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
