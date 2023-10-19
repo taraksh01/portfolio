@@ -45,6 +45,31 @@ const Home = () => {
           />
         </div>
       </article>
+      <article className="my-10 text-white font-mono">
+        <div className="flex items-center w-2/3">
+          <h2 className="text-4xl">
+            <span className="text-orange-400">#</span>about-me
+          </h2>
+          <div className="w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
+        </div>
+        <div className="flex justify-between items-center">
+          <div className="w-1/2">
+            <h2 className="text-lg">Hello, I am Tarak!</h2>
+            <p className="my-12">
+              I'm a front-end developer based in Kolkata, India. I can develop
+              responsive websites from scratch and raise them into modern
+              user-friendly web experiences. Transforming my creativity and
+              knowledge into a websites has been my passion for years.
+            </p>
+            <button className="border border-orange-400 p-2 rounded-md text-xl">
+              Read more {"-->"}
+            </button>
+          </div>
+          <div>
+            <img className="w-96 h-96" src="" alt="" />
+          </div>
+        </div>
+      </article>
     </main>
   );
 };
