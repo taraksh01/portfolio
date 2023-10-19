@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/taraksh01/portfolio#readme",
   "devDependencies": {
-    "parcel": "^2.10.0"
+    "autoprefixer": "^10.4.16",
+    "parcel": "^2.10.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
   }
 }
