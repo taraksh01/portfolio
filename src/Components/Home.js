@@ -2,6 +2,7 @@ import Project from "./SingleProject";
 import Skill from "./Skill";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import { ImLinkedin2 } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -15,9 +16,12 @@ const Home = () => {
           <p className="my-8">
             He crafts responsive websites where technologies meet creativity
           </p>
-          <button className="border rounded-sm p-2 border-orange-400 font-semibold">
+          <Link
+            to={"/contact"}
+            className="border rounded-sm p-2 border-orange-400 font-semibold"
+          >
             Contact me!!
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col my-10 items-center">
           <img className="h-96 w-96" alt="Image" src="" />
@@ -34,9 +38,9 @@ const Home = () => {
             </h2>
             <div className="w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
           </div>
-          <button className="text-xl">
+          <Link to={"/projects"} className="text-xl">
             view all <span>{"-->"}</span>
-          </button>
+          </Link>
         </div>
         <div className="flex justify-between gap-6">
           <Project
@@ -82,9 +86,12 @@ const Home = () => {
               user-friendly web experiences. Transforming my creativity and
               knowledge into a websites has been my passion for years.
             </p>
-            <button className="border border-orange-400 p-2 rounded-md text-xl">
+            <Link
+              to={"/about"}
+              className="border border-orange-400 p-2 rounded-md text-xl"
+            >
               Read more {"-->"}
-            </button>
+            </Link>
           </div>
           <div>
             <img className="w-96 h-96" src="" alt="" />
@@ -105,14 +112,24 @@ const Home = () => {
           </p>
           <div className="flex gap-3 flex-col">
             <p className="text-lg font-medium">Message me here</p>
-            <div className="flex  gap-3 items-end">
+            <Link
+              to={"https://www.linkedin.com/in/taraksh01/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-3 items-end"
+            >
               <ImLinkedin2 className="text-orange-400 text-4xl" />
               <p>@taraksh01</p>
-            </div>
-            <div className="flex gap-3 items-center">
+            </Link>
+            <Link
+              to={"mailto:taraksh01@gmail.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-3 items-center"
+            >
               <IoMailUnreadOutline className="text-orange-400 text-4xl" />
               <p>taraksh01@gmail.com</p>
-            </div>
+            </Link>
           </div>
         </div>
       </article>
