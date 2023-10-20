@@ -48,6 +48,24 @@ const Home = () => {
       <article className="my-10 text-white font-mono">
         <div className="flex items-center w-2/3">
           <h2 className="text-4xl">
+            <span className="text-orange-400">#</span>skills
+          </h2>
+          <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
+        </div>
+        <div className="flex items-baseline justify-end w-3/5 ml-auto flex-wrap gap-y-5 gap-x-5 my-10">
+          <Skill heading="Others" fills={["HTML", "CSS"]} />
+          <Skill heading="Databases" fills={["MySQL"]} />
+          <Skill
+            heading="Framework/Library"
+            fills={["React", "Redux", "tailwind"]}
+          />
+          <Skill heading="Languages" fills={["JavaScript", "Python"]} />
+          <Skill heading="Tools" fills={["Linux", "VSCode", "Git", "Github"]} />
+        </div>
+      </article>
+      <article className="my-10 text-white font-mono">
+        <div className="flex items-center w-2/3">
+          <h2 className="text-4xl">
             <span className="text-orange-400">#</span>about-me
           </h2>
           <div className="w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
@@ -71,6 +89,21 @@ const Home = () => {
         </div>
       </article>
     </main>
+  );
+};
+
+const Skill = ({ heading, fills }) => {
+  return (
+    <table className="border w-56 hover:text-orange-100">
+      <tbody>
+        <tr>
+          <th className="border text-xl p-0.5">{heading}</th>
+        </tr>
+        <tr>
+          <td className="text-lg p-2">{fills.join(" ")}</td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 
