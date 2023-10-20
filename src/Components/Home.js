@@ -99,7 +99,7 @@ const Home = () => {
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
         <div className="flex justify-between items-center">
-          <p className="text-lg w-1/3 my-20">
+          <p className="text-lg w-1/2 my-20">
             I am looking for an job opportunities in frontend development. If
             you are interested in getting started please contact me.
           </p>
