@@ -1,5 +1,7 @@
 import Project from "./SingleProject";
 import Skill from "./Skill";
+import { IoMailUnreadOutline } from "react-icons/io5";
+import { ImLinkedin2 } from "react-icons/im";
 
 const Home = () => {
   return (
@@ -86,6 +88,31 @@ const Home = () => {
           </div>
           <div>
             <img className="w-96 h-96" src="" alt="" />
+          </div>
+        </div>
+      </article>
+      <article className="my-10 text-white font-mono">
+        <div className="flex items-center w-2/3">
+          <h2 className="text-4xl">
+            <span className="text-orange-400">#</span>contact
+          </h2>
+          <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
+        </div>
+        <div className="flex justify-between items-center">
+          <p className="text-lg w-1/3 my-20">
+            I am looking for an job opportunities in frontend development. If
+            you are interested in getting started please contact me.
+          </p>
+          <div className="flex gap-3 flex-col">
+            <p className="text-lg font-medium">Message me here</p>
+            <div className="flex  gap-3 items-end">
+              <ImLinkedin2 className="text-orange-400 text-4xl" />
+              <p>@taraksh01</p>
+            </div>
+            <div className="flex gap-3 items-center">
+              <IoMailUnreadOutline className="text-orange-400 text-4xl" />
+              <p>taraksh01@gmail.com</p>
+            </div>
           </div>
         </div>
       </article>
