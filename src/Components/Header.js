@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <>
-      <header className="max-w-screen-xl h-14 mx-auto text-gray-200 flex items-end justify-between font-mono">
+    <div className="sticky top-0 bg-black pb-1">
+      <header className="max-w-screen-xl h-16 mx-auto text-gray-200 flex items-end justify-between font-mono">
         <Link to={"/"} className="hover:text-white active:text-white">
           <h1 className="text-2xl font-semibold">Tarak Shaw</h1>
         </Link>
@@ -30,7 +30,7 @@ const Header = () => {
           </Link>
         </nav>
       </header>
-    </>
+    </div>
   );
 };
 
