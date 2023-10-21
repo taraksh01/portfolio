@@ -112,20 +112,20 @@ const Home = () => {
           </div>
         </div>
       </article>
-      <article className="my-10 text-white font-mono">
+      <article className="text-white font-mono m-2">
         <div className="flex items-center w-2/3">
           <h2 className="text-4xl">
             <span className="text-orange-400">#</span>contact
           </h2>
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
-        <div className="flex justify-between items-center">
-          <p className="text-lg w-1/2 my-20">
+        <div className="flex flex-col sm:flex-row justify-between items-center">
+          <p className="text-lg sm:w-1/2 my-10 md:my-20">
             I am looking for an job opportunities in frontend development. If
             you are interested in getting started please contact me.
           </p>
-          <div className="flex gap-3 flex-col">
-            <p className="text-lg font-medium">Message me here</p>
+          <div className="flex justify-center place-self-start sm:place-self-center gap-3 flex-col">
+            <p className="text-lg font-semibold">Message me here</p>
             <Link
               to={"https://www.linkedin.com/in/taraksh01/"}
               target="_blank"
