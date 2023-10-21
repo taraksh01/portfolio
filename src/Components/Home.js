@@ -30,7 +30,7 @@ const Home = () => {
           </p>
         </div>
       </article>
-      <article className="text-white font-mono m-4">
+      <article className="text-white font-mono m-2">
         <div className="flex justify-between items-center mb-10">
           <div className="flex items-center md:w-2/3">
             <h2 className="text-4xl">
@@ -66,7 +66,7 @@ const Home = () => {
           />
         </div>
       </article>
-      <article className="text-white font-mono m-4 xl:m-0 xl:my-10">
+      <article className="text-white font-mono m-2 xl:m-0 xl:my-10">
         <div className="flex items-center w-2/3">
           <h2 className="text-4xl">
             <span className="text-orange-400">#</span>skills
@@ -84,17 +84,17 @@ const Home = () => {
           <Skill heading="Others" fills={["HTML", "CSS"]} />
         </div>
       </article>
-      <article className="my-10 text-white font-mono">
-        <div className="flex items-center w-2/3">
+      <article className="text-white font-mono m-2">
+        <div className="flex items-center md:w-2/3">
           <h2 className="text-4xl">
             <span className="text-orange-400">#</span>about-me
           </h2>
-          <div className="w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
+          <div className="hidden md:flex md:w-1/2 lg:w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
         <div className="flex justify-between items-center">
-          <div className="w-1/2">
-            <h2 className="text-lg">Hello, I am Tarak!</h2>
-            <p className="my-12">
+          <div className="md:w-1/2 my-5 md:my-0">
+            <h2 className="text-xl">Hello, I am Tarak!</h2>
+            <p className="my-8">
               I'm a front-end developer based in Kolkata, India. I can develop
               responsive websites from scratch and raise them into modern
               user-friendly web experiences. Transforming my creativity and
@@ -108,7 +108,7 @@ const Home = () => {
             </Link>
           </div>
           <div>
-            <img className="w-96 h-96" src="" alt="" />
+            <img className="w-96 h-96 hidden md:flex border" src="" alt="" />
           </div>
         </div>
       </article>
