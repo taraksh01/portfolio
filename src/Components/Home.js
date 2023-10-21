@@ -44,7 +44,7 @@ const Home = () => {
             <span className="sm:hidden">more{"->"}</span>
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col md:flex-row gap-6 md:justify-between">
           <Project
             tech={["React", "tailwind", "parcel"]}
             name={"project 1"}
