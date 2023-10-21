@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <main className="max-w-screen-xl mx-auto text-white flex flex-col font-mono">
-      <article className="flex justify-between items-center">
-        <div className="w-5/12">
-          <h1 className="text-4xl">
+      <article className="flex flex-col md:flex-row m-2 my-5 md:m-0 justify-between md:items-center">
+        <div className="md:w-5/12">
+          <h1 className="text-3xl md:text-4xl">
             Tarak is a{" "}
             <span className="text-orange-400">front-end developer</span>
           </h1>
@@ -23,8 +23,8 @@ const Home = () => {
             Contact me!!
           </Link>
         </div>
-        <div className="flex flex-col my-10 items-center">
-          <img className="h-96 w-96" alt="Image" src="" />
+        <div className="flex flex-col items-center my-8">
+          <img className="h-96 w-96" alt="Image" src={""} />
           <p className="font-semibold text-lg border border-white my-1 p-1 rounded-sm">
             🟠 Currently working of portfolio
           </p>
