@@ -12,13 +12,13 @@ const Footer = () => {
       <div className="w-full h-px bg-gray-100 flex-shrink-0"></div>
       <footer className="max-w-screen-xl mx-auto text-gray-100 flex justify-between flex-col font-mono">
         <div className="flex flex-col sm:flex-row justify-between items-center my-8 mx-4 gap-5">
-          <div className="flex flex-col gap-1 text-lg">
+          <div className="flex flex-col gap-1">
             <p>
               <Link
                 to={"https://github.com/taraksh01"}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="pr-4 text-xl font-semibold"
+                className="pr-4 font-bold"
               >
                 Tarak
               </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
             <p className="text-center sm:text-left">Front-end developer</p>
           </div>
           <div className="flex gap-3 flex-col">
-            <p className="text-2xl font-semibold">Available here</p>
+            <p className="text-xl font-semibold">Available here</p>
             <div className="flex items-end justify-between">
               <Link
                 to={"https://www.linkedin.com/in/taraksh01/"}
@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-lg flex justify-center items-center my-2">
+        <div className="flex justify-center items-center my-2">
           <AiOutlineCopyright className="inline text-2xl pr-2" /> copyright 2023
           Made by
           <Link
