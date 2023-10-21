@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <main className="max-w-screen-xl mx-auto text-white flex flex-col font-mono">
-      <article className="flex flex-col md:flex-row m-2 my-5 md:m-0 justify-between md:items-center">
+      <article className="flex flex-col md:flex-row m-2 my-5 justify-between md:items-center">
         <div className="md:w-5/12">
           <h1 className="text-3xl md:text-4xl">
             Tarak is a{" "}
@@ -30,19 +30,19 @@ const Home = () => {
           </p>
         </div>
       </article>
-      <article className="text-white font-mono m-4 xl:m-0">
+      <article className="text-white font-mono m-4">
         <div className="flex justify-between items-center mb-10">
-          <div className="flex items-center xl:w-2/3">
+          <div className="flex items-center md:w-2/3">
             <h2 className="text-4xl">
               <span className="text-orange-400">#</span>projects
             </h2>
-            <div className="invisible xl:visible w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
+            <div className="invisible md:visible w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
           </div>
           <Link to={"/projects"} className="text-xl">
             view all <span>{"->"}</span>
           </Link>
         </div>
-        <div className="flex flex-col xl:flex-row justify-between gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           <Project
             tech={["React", "tailwind", "parcel"]}
             name={"project 1"}
