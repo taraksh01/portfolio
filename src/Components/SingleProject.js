@@ -3,14 +3,14 @@ const Project = ({ tech, name, desc, live, code }) => {
     <>
       <div className="">
         <img className="h-64 w-full rounded-xl" src="" alt="" />
-        <p className="text-3xl font-semibold p-2">{name}</p>
-        <p className="text-lg p-1">{tech.join(", ")}</p>
-        <p className="text-lg p-1">{desc}</p>
-        <div className="flex gap-4 p-1 xl:py-2">
-          <button className="text-lg border border-orange-300 p-1 rounded-md">
+        <p className="text-2xl font-semibold p-1">{name}</p>
+        <p className="px-1">{tech.join(", ")}</p>
+        <p className="px-1">{desc}</p>
+        <div className="flex gap-4 px-1 py-2">
+          <button className="md:text-lg border border-orange-300 py-1 px-2 rounded-md">
             live {"🚀"}
           </button>
-          <button className="text-lg border border-orange-300 p-1 rounded-md">
+          <button className="md:text-lg border border-orange-300 py-1 px-2 rounded-md">
             code {"</>"}
           </button>
         </div>
