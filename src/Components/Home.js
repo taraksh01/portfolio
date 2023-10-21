@@ -25,7 +25,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-center my-8">
           <img className="h-96 w-96" alt="Image" src={""} />
-          <p className="font-semibold text-lg border border-white my-1 p-1 rounded-sm">
+          <p className="font-semibold border border-white my-1 p-1 rounded-sm">
             🟠 Currently working of portfolio
           </p>
         </div>
@@ -33,13 +33,15 @@ const Home = () => {
       <article className="text-white font-mono m-2">
         <div className="flex justify-between items-center mb-10">
           <div className="flex items-center md:w-2/3">
-            <h2 className="text-4xl">
+            <h2 className="text-3xl md:text-4xl">
               <span className="text-orange-400">#</span>projects
             </h2>
             <div className="invisible md:visible w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
           </div>
-          <Link to={"/projects"} className="text-xl">
-            view all <span>{"->"}</span>
+          <Link to={"/projects"} className="text-lg">
+            {/* view all <span>{"->"}</span> */}
+            <span className="hidden sm:flex">all works {"->"}</span>
+            <span className="sm:hidden">more{"->"}</span>
           </Link>
         </div>
         <div className="flex flex-col md:flex-row gap-6">
