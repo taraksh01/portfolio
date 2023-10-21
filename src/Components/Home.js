@@ -66,22 +66,22 @@ const Home = () => {
           />
         </div>
       </article>
-      <article className="my-10 text-white font-mono">
+      <article className="text-white font-mono m-4 xl:m-0 xl:my-10">
         <div className="flex items-center w-2/3">
           <h2 className="text-4xl">
             <span className="text-orange-400">#</span>skills
           </h2>
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
-        <div className="flex items-baseline justify-end w-3/5 ml-auto flex-wrap gap-y-5 gap-x-5 my-10">
-          <Skill heading="Others" fills={["HTML", "CSS"]} />
-          <Skill heading="Databases" fills={["MySQL"]} />
+        <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-end md:w-4/5 lg:w-3/5 sm:ml-auto sm:flex-wrap gap-5 my-10">
+          <Skill heading="Languages" fills={["JavaScript", "Python"]} />
+          <Skill heading="Tools" fills={["Linux", "VSCode", "Git", "Github"]} />
           <Skill
             heading="Framework/Library"
             fills={["React", "Redux", "tailwind"]}
           />
-          <Skill heading="Languages" fills={["JavaScript", "Python"]} />
-          <Skill heading="Tools" fills={["Linux", "VSCode", "Git", "Github"]} />
+          <Skill heading="Databases" fills={["MySQL"]} />
+          <Skill heading="Others" fills={["HTML", "CSS"]} />
         </div>
       </article>
       <article className="my-10 text-white font-mono">
