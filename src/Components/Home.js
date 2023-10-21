@@ -70,7 +70,7 @@ const Home = () => {
       </article>
       <article className="text-white font-mono m-2 xl:m-0 xl:my-10">
         <div className="flex items-center w-2/3">
-          <h2 className="text-4xl">
+          <h2 className="text-3xl md:text-4xl">
             <span className="text-orange-400">#</span>skills
           </h2>
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
@@ -88,15 +88,15 @@ const Home = () => {
       </article>
       <article className="text-white font-mono m-2">
         <div className="flex items-center md:w-2/3">
-          <h2 className="text-4xl">
+          <h2 className="text-3xl md:text-4xl">
             <span className="text-orange-400">#</span>about-me
           </h2>
           <div className="hidden md:flex md:w-1/2 lg:w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
         <div className="flex justify-between items-center">
           <div className="md:w-1/2 my-5 md:my-0">
-            <h2 className="text-xl">Hello, I am Tarak!</h2>
-            <p className="my-8">
+            <h2 className="font-semibold md:text-lg">Hello, I am Tarak!</h2>
+            <p className="my-8 md:text-lg">
               I'm a front-end developer based in Kolkata, India. I can develop
               responsive websites from scratch and raise them into modern
               user-friendly web experiences. Transforming my creativity and
@@ -104,9 +104,9 @@ const Home = () => {
             </p>
             <Link
               to={"/about"}
-              className="border border-orange-400 p-2 rounded-md text-xl"
+              className="border border-orange-400 p-2 rounded-md text-lg font-medium"
             >
-              Read more {"-->"}
+              Read more {"->"}
             </Link>
           </div>
           <div>
@@ -116,13 +116,13 @@ const Home = () => {
       </article>
       <article className="text-white font-mono m-2">
         <div className="flex items-center w-2/3">
-          <h2 className="text-4xl">
+          <h2 className="text-3xl md:text-4xl">
             <span className="text-orange-400">#</span>contact
           </h2>
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-lg sm:w-1/2 my-10 md:my-20">
+          <p className="md:text-lg sm:w-1/2 my-10 md:my-20">
             I am looking for an job opportunities in frontend development. If
             you are interested in getting started please contact me.
           </p>
