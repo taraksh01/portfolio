@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <main className="max-w-screen-xl mx-auto text-white flex flex-col font-mono">
       <article className="flex flex-col md:flex-row m-2 my-5 justify-between md:items-center">
-        <div className="md:w-5/12">
+        <div className="md:w-5/12 mx-2">
           <h1 className="text-3xl md:text-4xl">
             Tarak is a{" "}
             <span className="text-orange-400">front-end developer</span>
