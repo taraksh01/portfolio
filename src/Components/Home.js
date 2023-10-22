@@ -123,7 +123,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <p className="md:text-lg sm:w-1/2 my-10 md:my-20">
-            I am looking for an job opportunities in frontend development. If
+            I am looking for a job opportunities in frontend development. If
             you are interested in getting started please contact me.
           </p>
           <div className="flex justify-center place-self-start sm:place-self-center gap-3 flex-col">
