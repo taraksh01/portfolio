@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <main className="max-w-screen-xl mx-auto text-white flex flex-col font-mono">
+    <main className="max-w-screen-xl mx-auto text-gray-200 flex flex-col font-mono">
       <article className="flex flex-col md:flex-row m-2 my-5 justify-between md:items-center">
         <div className="md:w-5/12 mx-2">
           <h1 className="text-3xl md:text-4xl">
@@ -30,7 +30,7 @@ const Home = () => {
           </p>
         </div>
       </article>
-      <article className="text-white font-mono m-2">
+      <article className="m-2">
         <div className="flex justify-between items-center mb-10">
           <div className="flex items-center md:w-2/3">
             <h2 className="text-3xl md:text-4xl">
@@ -68,7 +68,7 @@ const Home = () => {
           />
         </div>
       </article>
-      <article className="text-white font-mono m-2 xl:m-0 xl:my-10">
+      <article className="m-2 xl:m-0 xl:my-10">
         <div className="flex items-center w-2/3">
           <h2 className="text-3xl md:text-4xl">
             <span className="text-orange-400">#</span>skills
@@ -86,7 +86,7 @@ const Home = () => {
           <Skill heading="Others" fills={["HTML", "CSS"]} />
         </div>
       </article>
-      <article className="text-white font-mono m-2">
+      <article className="m-2">
         <div className="flex items-center md:w-2/3">
           <h2 className="text-3xl md:text-4xl">
             <span className="text-orange-400">#</span>about-me
@@ -114,7 +114,7 @@ const Home = () => {
           </div>
         </div>
       </article>
-      <article className="text-white font-mono m-2">
+      <article className="m-2">
         <div className="flex items-center w-2/3">
           <h2 className="text-3xl md:text-4xl">
             <span className="text-orange-400">#</span>contact

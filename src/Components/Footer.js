@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-px bg-gray-100 flex-shrink-0"></div>
-      <footer className="max-w-screen-xl mx-auto text-gray-100 flex justify-between flex-col font-mono">
+      <div className="w-full h-px bg-gray-200 flex-shrink-0"></div>
+      <footer className="max-w-screen-xl mx-auto  text-gray-200 flex justify-between flex-col font-mono">
         <div className="flex flex-col sm:flex-row justify-between items-center my-8 mx-4 gap-5">
           <div className="flex flex-col gap-1">
             <p>
