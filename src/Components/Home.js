@@ -93,7 +93,7 @@ const Home = () => {
           </h2>
           <div className="hidden md:flex md:w-1/2 lg:w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="mx-4 my-5 flex justify-between items-center">
           <div className="md:w-1/2 my-5 md:my-0">
             <h2 className="font-semibold md:text-lg">Hello, I am Tarak!</h2>
             <p className="my-8 md:text-lg">
@@ -121,7 +121,7 @@ const Home = () => {
           </h2>
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between items-center">
+        <div className="mx-4 my-5 flex flex-col sm:flex-row justify-between items-center">
           <p className="md:text-lg sm:w-1/2 my-10 md:my-20">
             I am looking for a job opportunities in frontend development. If you
             are interested in getting started please contact me.
