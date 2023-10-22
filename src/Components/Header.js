@@ -15,17 +15,17 @@ const Header = () => {
           </Link>
           <Link to={"/projects"} className="hover:text-white active:text-white">
             <p className="text-xl cursor-pointer">
-              <span className="text-orange-400">#</span>projects
+              <span className="text-orange-400">#</span>works
             </p>
           </Link>
           <Link to={"/about"} className="hover:text-white active:text-white">
             <p className="text-xl">
-              <span className="text-orange-400">#</span>about
+              <span className="text-orange-400">#</span>about-me
             </p>
           </Link>
           <Link to={"/contact"} className="hover:text-white active:text-white">
             <p className="text-xl">
-              <span className="text-orange-400">#</span>contact
+              <span className="text-orange-400">#</span>contacts
             </p>
           </Link>
         </nav>
