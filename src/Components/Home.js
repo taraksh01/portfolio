@@ -44,7 +44,7 @@ const Home = () => {
             <span className="sm:hidden">more{"->"}</span>
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 md:justify-between">
+        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start lg:justify-evenly">
           <Project
             tech={["React", "tailwind", "parcel"]}
             name={"project 1"}
@@ -123,8 +123,8 @@ const Home = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <p className="md:text-lg sm:w-1/2 my-10 md:my-20">
-            I am looking for a job opportunities in frontend development. If
-            you are interested in getting started please contact me.
+            I am looking for a job opportunities in frontend development. If you
+            are interested in getting started please contact me.
           </p>
           <div className="flex justify-center place-self-start sm:place-self-center gap-3 flex-col">
             <p className="text-lg font-semibold">Message me here</p>
