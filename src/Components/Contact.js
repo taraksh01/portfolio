@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import { ImLinkedin2 } from "react-icons/im";
+import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <main className="max-w-screen-xl mx-auto my-10 text-gray-200 flex flex-col font-mono">
@@ -9,7 +10,7 @@ const Contact = () => {
       </h2>
       <p className="mx-4 md:mx-2 sm:text-lg font-semibold">Who am i?</p>
       <div className="mx-6 md:mx-4">
-        <div className="my-5 flex flex-col sm:flex-row justify-between items-center">
+        <div className="my-5 flex flex-col md:flex-row justify-between items-center">
           <p className="md:text-lg sm:w-1/2 my-10 md:my-20">
             I am looking for a job opportunities in frontend development. If you
             are interested in getting started please contact me.
@@ -37,6 +38,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ContactForm />
     </main>
   );
 };
