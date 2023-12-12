@@ -25,7 +25,7 @@ const Header = () => {
           </Link>
           <Link to={"/about"} className="hover:text-white active:text-white">
             <p className="text-xl">
-              <span className="text-orange-400">#</span>about-me
+              <span className="text-orange-400">#</span>about
             </p>
           </Link>
           <Link to={"/contact"} className="hover:text-white active:text-white">
@@ -81,7 +81,7 @@ const Menu = ({ status, setStatus }) => {
           onClick={() => setStatus(false)}
         >
           <p>
-            <span className="text-orange-400">#</span>about-me
+            <span className="text-orange-400">#</span>about
           </p>
         </Link>
         <Link

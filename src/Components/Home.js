@@ -89,7 +89,7 @@ const Home = () => {
       <article className="m-2">
         <div className="flex items-center md:w-2/3">
           <h2 className="text-2xl md:text-3xl">
-            <span className="text-orange-400">#</span>about-me
+            <span className="text-orange-400">#</span>about
           </h2>
           <div className="hidden md:flex md:w-1/2 lg:w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
