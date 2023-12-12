@@ -9,7 +9,7 @@ const Home = () => {
     <main className="max-w-screen-xl mx-auto text-gray-200 flex flex-col font-mono">
       <article className="flex flex-col md:flex-row m-2 my-5 justify-between md:items-center">
         <div className="md:w-5/12 mx-2">
-          <h1 className="text-3xl md:text-4xl">
+          <h1 className="text-2xl md:text-3xl">
             Tarak is a{" "}
             <span className="text-orange-400">front-end developer</span>
           </h1>
@@ -33,7 +33,7 @@ const Home = () => {
       <article className="m-2">
         <div className="flex justify-between items-center mb-10">
           <div className="flex items-center md:w-2/3">
-            <h2 className="text-3xl md:text-4xl">
+            <h2 className="text-2xl md:text-3xl">
               <span className="text-orange-400">#</span>projects
             </h2>
             <div className="invisible md:visible w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
@@ -70,7 +70,7 @@ const Home = () => {
       </article>
       <article className="m-2 xl:m-0 xl:my-10">
         <div className="flex items-center w-2/3">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="text-2xl md:text-3xl">
             <span className="text-orange-400">#</span>skills
           </h2>
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
@@ -88,7 +88,7 @@ const Home = () => {
       </article>
       <article className="m-2">
         <div className="flex items-center md:w-2/3">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="text-2xl md:text-3xl">
             <span className="text-orange-400">#</span>about-me
           </h2>
           <div className="hidden md:flex md:w-1/2 lg:w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
@@ -116,7 +116,7 @@ const Home = () => {
       </article>
       <article className="m-2">
         <div className="flex items-center w-2/3">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="text-2xl md:text-3xl">
             <span className="text-orange-400">#</span>contact
           </h2>
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
