@@ -14,7 +14,7 @@ const Home = () => {
             Tarak is a{" "}
             <span className="text-orange-400">front-end developer</span>
           </h1>
-          <p className="my-8">
+          <p className="my-8 text-lg">
             He crafts responsive websites where technologies meet creativity
           </p>
           <Link
@@ -44,7 +44,7 @@ const Home = () => {
             <span className="sm:hidden mr-4">more{"->"}</span>
           </Link>
         </div>
-        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start lg:justify-evenly">
+        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start sm:items-start lg:justify-evenly">
           {projects?.map((project) => (
             <Project
               key={project?.projectName}
@@ -100,7 +100,11 @@ const Home = () => {
             </Link>
           </div>
           <div>
-            <img className="w-96 h-96 hidden md:flex border" src="" alt="" />
+            <img
+              className="w-96 h-96 hidden md:flex border"
+              src=""
+              alt="Image"
+            />
           </div>
         </div>
       </article>
