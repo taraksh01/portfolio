@@ -3,6 +3,7 @@ import Skill from "./Skill";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import { ImLinkedin2 } from "react-icons/im";
 import { Link } from "react-router-dom";
+import { projects } from "../projects";
 
 const Home = () => {
   return (
@@ -39,33 +40,22 @@ const Home = () => {
             <div className="invisible md:visible w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
           </div>
           <Link to={"/projects"} className="text-lg">
-            {/* view all <span>{"->"}</span> */}
             <span className="hidden sm:flex">all works {"->"}</span>
-            <span className="sm:hidden">more{"->"}</span>
+            <span className="sm:hidden mr-4">more{"->"}</span>
           </Link>
         </div>
         <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start lg:justify-evenly">
-          <Project
-            tech={["React", "tailwind", "parcel"]}
-            name={"project 1"}
-            desc={"This is a short description for project"}
-            live={"https://github.com/taraksh01/pet-pooja"}
-            code={"https://github.com/taraksh01/pet-pooja"}
-          />
-          <Project
-            tech={["React", "tailwind", "parcel"]}
-            name={"project 1"}
-            desc={"This is a short description for project"}
-            live={"https://github.com/taraksh01/pet-pooja"}
-            code={"https://github.com/taraksh01/pet-pooja"}
-          />
-          <Project
-            tech={["React", "tailwind", "parcel"]}
-            name={"project 1"}
-            desc={"This is a short description for project"}
-            live={"https://github.com/taraksh01/pet-pooja"}
-            code={"https://github.com/taraksh01/pet-pooja"}
-          />
+          {projects?.map((project) => (
+            <Project
+              key={project?.projectName}
+              tech={project?.techStack}
+              name={project?.projectName}
+              desc={project?.description}
+              live={project?.live}
+              code={project?.code}
+              image={project?.image}
+            />
+          ))}
         </div>
       </article>
       <article className="m-2 xl:m-0 xl:my-10">
