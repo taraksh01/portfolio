@@ -1,3 +1,5 @@
+import linkMe from "./assets/images/linkMe.png";
+
 export const projects = [
   {
     projectName: "LinkMe",
@@ -6,7 +8,7 @@ export const projects = [
     techStack: ["React.js", "Tailwind CSS", "Redux JS", "Appwrite"],
     live: "https://link-me-gamma.vercel.app/",
     code: "https://github.com/taraksh01/linkMe",
-    image: "",
+    image: linkMe,
   },
   {
     projectName: "PetPooja",
