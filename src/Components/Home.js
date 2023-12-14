@@ -8,7 +8,7 @@ import { projects } from "../projects";
 const Home = () => {
   return (
     <main className="max-w-screen-xl mx-auto text-gray-200 flex flex-col font-mono">
-      <article className="flex flex-col md:flex-row m-2 my-5 justify-between md:items-center">
+      <article className="flex flex-col md:flex-row m-4 justify-between md:items-center">
         <div className="md:w-5/12 mx-2">
           <h1 className="text-2xl md:text-3xl">
             Tarak is a{" "}
@@ -44,7 +44,7 @@ const Home = () => {
             <span className="sm:hidden mr-4">more{"->"}</span>
           </Link>
         </div>
-        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start sm:items-start lg:justify-evenly">
+        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-center sm:items-start lg:justify-evenly">
           {projects?.map((project) => (
             <Project
               key={project?.projectName}
@@ -58,7 +58,7 @@ const Home = () => {
           ))}
         </div>
       </article>
-      <article className="m-2 xl:m-0 xl:my-10">
+      <article className="m-4 xl:my-10">
         <div className="flex items-center w-2/3">
           <h2 className="text-2xl md:text-3xl">
             <span className="text-orange-400">#</span>skills
