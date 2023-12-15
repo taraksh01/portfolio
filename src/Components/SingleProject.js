@@ -9,8 +9,8 @@ const Project = ({
   image,
 }) => {
   return (
-    <div className="w-full sm:w-96 flex flex-col flex-shrink-0">
-      <div className="w-full">
+    <div className="w-full transition-all duration-500 hover:scale-105 flex flex-col flex-shrink-0">
+      <div className="">
         <img className="object-contain" src={image} alt="project image" />
       </div>
       <div>
@@ -23,14 +23,14 @@ const Project = ({
           <Link
             to={live}
             target="_blank"
-            className="md:text-lg transition-all duration-300 border hover:border-orange-300 p-2 rounded-md"
+            className="md:text-lg transition-all duration-300 border hover:border-orange-400 p-2 rounded-md"
           >
             live {"🚀"}
           </Link>
           <Link
             to={code}
             target="_blank"
-            className="md:text-lg transition-all duration-300 border hover:border-orange-300 p-2 rounded-md"
+            className="md:text-lg transition-all duration-300 border hover:border-orange-400 p-2 rounded-md"
           >
             code {"</>"}
           </Link>
