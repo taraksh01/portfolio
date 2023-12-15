@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="sticky top-0 bg-black">
+    <div className="sticky top-0 bg-black z-10">
       <header className="max-w-screen-xl h-16 mx-auto text-gray-200 flex items-center justify-between font-mono">
         <Link to={"/"} className="hover:text-white active:text-white mx-2">
           <h1 className="text-2xl font-semibold mx-4">Tarak Shaw</h1>
@@ -47,8 +47,8 @@ const Header = () => {
             />
           )}
         </button>
+        <Menu status={showMenu} setStatus={setShowMenu} navItems={navItems} />
       </header>
-      <Menu status={showMenu} setStatus={setShowMenu} navItems={navItems} />
     </div>
   );
 };
