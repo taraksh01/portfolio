@@ -51,7 +51,7 @@ const Home = () => {
             <span className="sm:hidden mr-4">more{"->"}</span>
           </Link>
         </div>
-        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-center sm:items-start lg:justify-evenly">
+        <div className="sm:mx-4 grid grid-flow-row grid-cols-1 justify-center sm:grid-cols-2 gap-10">
           {projects?.map((project) => (
             <Project key={project?.projectName} {...project} />
           ))}
