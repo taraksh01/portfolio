@@ -6,7 +6,7 @@ const Skill = ({ heading, fills }) => {
           <th className="border text-lg p-0.5">{heading}</th>
         </tr>
         <tr>
-          <td className="p-2">{fills.join(" ")}</td>
+          <td className="p-2">{fills?.join(" ")}</td>
         </tr>
       </tbody>
     </table>
