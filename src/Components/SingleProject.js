@@ -15,8 +15,8 @@ const Project = ({
       </div>
       <div>
         <p className="text-2xl font-semibold px-1 my-2">{projectName}</p>
-        <p className="mx-1 my-2 text-xl">{description}</p>
-        <p className="mx-1 my-2 text-xl">
+        <p className="mx-1 my-2">{description}</p>
+        <p className="mx-1 my-2">
           <span className="font-bold">Tech Stack:</span> {techStack?.join(", ")}
         </p>
         <div className="flex justify-evenly items-center m-4">
