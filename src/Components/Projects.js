@@ -3,7 +3,7 @@ import Project from "./SingleProject";
 const Projects = () => {
   return (
     <main className="max-w-screen-xl mx-auto my-10 text-gray-200 flex flex-col font-mono">
-      <h2 className="text-3xl md:text-4xl mx-4 md:mx-2 my-3">
+      <h2 className="text-3xl mx-4 md:mx-2 my-3">
         <span className="text-orange-400">/</span>projects
       </h2>
       <p className="mx-4 md:mx-2 sm:text-lg">List of my projects</p>

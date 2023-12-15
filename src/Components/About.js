@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <main className="max-w-screen-xl mx-auto my-10 text-gray-200 flex flex-col font-mono">
-      <h2 className="text-3xl md:text-4xl mx-4 md:mx-2 my-3">
+      <h2 className="text-3xl mx-4 md:mx-2 my-3">
         <span className="text-orange-400">/</span>about-me
       </h2>
       <p className="mx-4 md:mx-2 sm:text-lg font-semibold">Who am i?</p>
@@ -25,7 +25,7 @@ const About = () => {
           </div>
         </div>
         <div className="my-10">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="text-3xl">
             <span className="text-orange-400">#</span>skills
           </h2>
           <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-start flex-wrap gap-8 my-10">
@@ -35,7 +35,7 @@ const About = () => {
           </div>
         </div>
         <div className="my-10">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="text-3xl">
             <span className="text-orange-400">#</span>Achievements
           </h2>
           <div className="flex my-5 lg:w-2/3 flex-wrap gap-4 md:text-lg mx-2">
