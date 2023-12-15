@@ -4,6 +4,8 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 import { ImLinkedin2 } from "react-icons/im";
 import { Link } from "react-router-dom";
 import { projects } from "../projects";
+import tarak from "../assets/images/tarak.png";
+import tarak2 from "../assets/images/tarak2.png";
 
 const Home = () => {
   return (
@@ -15,7 +17,7 @@ const Home = () => {
             <span className="text-orange-400">front-end developer</span>
           </h1>
           <p className="my-8 text-lg">
-            He crafts responsive websites where technologies meet creativity
+            He crafts responsive web apps where technologies meet creativity.
           </p>
           <Link
             to={"/contact"}
@@ -25,7 +27,11 @@ const Home = () => {
           </Link>
         </div>
         <div className="flex flex-col items-center my-8">
-          <img className="h-96 w-96" alt="Image" src={""} />
+          <img
+            className="w-80 object-contain rounded-full"
+            alt="Image"
+            src={tarak}
+          />
           <p className="font-semibold border border-white my-1 p-1 rounded-sm">
             🟠 Currently working of portfolio
           </p>
@@ -84,6 +90,11 @@ const Home = () => {
           <div className="hidden md:flex md:w-1/2 lg:w-2/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
         <div className="mx-4 my-5 flex justify-between items-center">
+          <img
+            className="w-80 object-contain hidden md:flex"
+            src={tarak2}
+            alt="Image"
+          />
           <div className="md:w-1/2 my-5 md:my-0">
             <h2 className="font-semibold md:text-lg">Hello, I am Tarak!</h2>
             <p className="my-8 md:text-lg">
@@ -98,13 +109,6 @@ const Home = () => {
             >
               Read more {"->"}
             </Link>
-          </div>
-          <div>
-            <img
-              className="w-96 h-96 hidden md:flex border"
-              src=""
-              alt="Image"
-            />
           </div>
         </div>
       </article>
