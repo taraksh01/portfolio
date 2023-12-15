@@ -1,5 +1,6 @@
 import Skill from "./Skill";
 import { skills } from "../skills";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <img className="w-96 h-96 hidden md:flex border" src="" alt="" />
+            <img className="w-96 h-96 hidden md:flex" src={""} alt="image" />
           </div>
         </div>
         <div className="my-10">
@@ -31,6 +32,30 @@ const About = () => {
             {skills?.map((skill, index) => (
               <Skill key={index} heading={skill.heading} fills={skill.fills} />
             ))}
+          </div>
+        </div>
+        <div className="my-10">
+          <h2 className="text-3xl md:text-4xl">
+            <span className="text-orange-400">#</span>Achievements
+          </h2>
+          <div className="flex my-5 lg:w-2/3 flex-wrap gap-4 md:text-lg mx-2">
+            <ul className="ml-8 list-disc">
+              <li>
+                Solved 180+ Problems on
+                <Link
+                  to={"https://leetcode.com/taraksh01/"}
+                  className="px-2 font-bold text-orange-400 hover:underline"
+                >
+                  leetcode
+                </Link>
+              </li>
+              <li>
+                Conceptual understanding of{" "}
+                <span className="font-bold">
+                  Data Structures and algorithms
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
