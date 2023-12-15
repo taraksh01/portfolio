@@ -53,15 +53,7 @@ const Home = () => {
         </div>
         <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-center sm:items-start lg:justify-evenly">
           {projects?.map((project) => (
-            <Project
-              key={project?.projectName}
-              tech={project?.techStack}
-              name={project?.projectName}
-              desc={project?.description}
-              live={project?.live}
-              code={project?.code}
-              image={project?.image}
-            />
+            <Project key={project?.projectName} {...project} />
           ))}
         </div>
       </article>
@@ -74,7 +66,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-end md:w-4/5 lg:w-3/5 sm:ml-auto sm:flex-wrap gap-5 my-10">
           {skills?.map((skill, index) => (
-            <Skill heading={skill?.heading} fills={skill?.fills} key={index} />
+            <Skill {...skill} key={index} />
           ))}
         </div>
       </article>
