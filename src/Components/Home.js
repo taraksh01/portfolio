@@ -4,6 +4,7 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 import { ImLinkedin2 } from "react-icons/im";
 import { Link } from "react-router-dom";
 import { projects } from "../projects";
+import { skills } from "../skills";
 import tarak from "../assets/images/tarak.png";
 import tarak2 from "../assets/images/tarak2.png";
 
@@ -72,14 +73,9 @@ const Home = () => {
           <div className="w-1/3 h-px mx-5 bg-orange-400 flex-shrink-0"></div>
         </div>
         <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-end md:w-4/5 lg:w-3/5 sm:ml-auto sm:flex-wrap gap-5 my-10">
-          <Skill heading="Languages" fills={["JavaScript", "Python"]} />
-          <Skill heading="Tools" fills={["Linux", "VSCode", "Git", "Github"]} />
-          <Skill
-            heading="Framework/Library"
-            fills={["React", "Redux", "tailwind"]}
-          />
-          <Skill heading="Databases" fills={["MySQL"]} />
-          <Skill heading="Others" fills={["HTML", "CSS"]} />
+          {skills?.map((skill, index) => (
+            <Skill heading={skill?.heading} fills={skill?.fills} key={index} />
+          ))}
         </div>
       </article>
       <article className="m-2">
