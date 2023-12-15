@@ -1,4 +1,5 @@
 import Skill from "./Skill";
+import { skills } from "../skills";
 
 const About = () => {
   return (
@@ -26,28 +27,12 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl">
             <span className="text-orange-400">#</span>skills
           </h2>
-          <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-start flex-wrap gap-5 my-10">
-            <Skill heading="Languages" fills={["JavaScript", "Python"]} />
-            <Skill
-              heading="Tools"
-              fills={["Linux", "VSCode", "Git", "Github"]}
-            />
-            <Skill
-              heading="Framework/Library"
-              fills={["React", "Redux", "tailwind"]}
-            />
-            <Skill heading="Databases" fills={["MySQL"]} />
-            <Skill heading="Others" fills={["HTML", "CSS"]} />
+          <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-start flex-wrap gap-8 my-10">
+            {skills?.map((skill, index) => (
+              <Skill key={index} heading={skill.heading} fills={skill.fills} />
+            ))}
           </div>
         </div>
-        {/* <div className="my-10">
-          <h2 className="text-3xl md:text-4xl">
-            <span className="text-orange-400">#</span>interests
-          </h2>
-          <div className="flex my-5 lg:w-2/3 flex-wrap gap-4 md:text-lg mx-2">
-            <p className="border py-1 px-2">geopolitics</p>
-          </div>
-        </div> */}
       </div>
     </main>
   );
