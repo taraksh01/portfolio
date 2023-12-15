@@ -1,4 +1,5 @@
 import Project from "./SingleProject";
+import { largeProjects, miniProjects } from "../projects";
 
 const Projects = () => {
   return (
@@ -10,56 +11,25 @@ const Projects = () => {
       <div className="mx-4 md:mx-2">
         <div className="my-10">
           <h2 className="text-2xl md:text-3xl">
-            <span className="text-orange-400">#</span>complete-apps
+            <span className="text-orange-400">#</span>Large-web-apps
           </h2>
         </div>
-        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start">
-          <Project
-            tech={["React", "tailwind", "parcel"]}
-            name={"project 1"}
-            desc={"This is a short description for project"}
-            live={"https://github.com/taraksh01/pet-pooja"}
-            code={"https://github.com/taraksh01/pet-pooja"}
-          />
-          <Project
-            tech={["React", "tailwind", "parcel"]}
-            name={"project 1"}
-            desc={"This is a short description for project"}
-            live={"https://github.com/taraksh01/pet-pooja"}
-            code={"https://github.com/taraksh01/pet-pooja"}
-          />
+        <div className="sm:mx-4 grid grid-flow-row grid-cols-1 justify-center sm:grid-cols-4 gap-6">
+          {largeProjects?.map((project, index) => (
+            <Project key={index} {...project} />
+          ))}
         </div>
       </div>
       <div className="mx-4 md:mx-2">
         <div className="my-10">
           <h2 className="text-2xl md:text-3xl">
-            <span className="text-orange-400">#</span>in-progress
+            <span className="text-orange-400">#</span>Mini-web-apps
           </h2>
         </div>
-        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start">
-          {/* <Project
-            tech={["React", "tailwind", "parcel"]}
-            name={"project 1"}
-            desc={"This is a short description for project"}
-            live={"https://github.com/taraksh01/pet-pooja"}
-            code={"https://github.com/taraksh01/pet-pooja"}
-          /> */}
-        </div>
-      </div>
-      <div className="mx-4 md:mx-2">
-        <div className="my-10">
-          <h2 className="text-2xl md:text-3xl">
-            <span className="text-orange-400">#</span>mini-projects
-          </h2>
-        </div>
-        <div className="sm:mx-4 flex flex-col justify-center items-center sm:flex-row sm:flex-wrap gap-6 sm:justify-start">
-          {/* <Project
-            tech={["React", "tailwind", "parcel"]}
-            name={"project 1"}
-            desc={"This is a short description for project"}
-            live={"https://github.com/taraksh01/pet-pooja"}
-            code={"https://github.com/taraksh01/pet-pooja"}
-          /> */}
+        <div className="sm:mx-4 grid grid-flow-row grid-cols-1 justify-center sm:grid-cols-4 gap-6">
+          {miniProjects?.map((project, index) => (
+            <Project key={index} {...project} />
+          ))}
         </div>
       </div>
     </main>
