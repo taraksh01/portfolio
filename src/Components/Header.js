@@ -47,8 +47,8 @@ const Header = () => {
             />
           )}
         </button>
-        <Menu status={showMenu} setStatus={setShowMenu} navItems={navItems} />
       </header>
+      <Menu status={showMenu} setStatus={setShowMenu} navItems={navItems} />
     </div>
   );
 };
